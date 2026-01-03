@@ -5,6 +5,11 @@ import {
   AssignmentTurnedInRounded,
   ChatRounded,
   Dashboard,
+  SelfImprovementRounded,
+  ShieldMoonRounded,
+  TipsAndUpdatesRounded,
+  TrendingUpRounded,
+  WorkHistoryRounded,
 } from "@mui/icons-material";
 import {
   List,
@@ -29,11 +34,36 @@ export const Navigation = memo(function Navigation(
       role="navigation"
       {...other}
     >
-      <NavItem path="/dashboard" label="Dashboard" icon={<Dashboard />} />
+      <NavItem path="/today" label="Today" icon={<Dashboard />} />
       <NavItem
-        path="/tasks"
-        label="Tasks"
+        path="/cfp-study"
+        label="CFP Study"
         icon={<AssignmentTurnedInRounded />}
+      />
+      <NavItem
+        path="/case-studies"
+        label="Case Studies"
+        icon={<WorkHistoryRounded />}
+      />
+      <NavItem
+        path="/boundaries"
+        label="Boundaries & Confidence"
+        icon={<ShieldMoonRounded />}
+      />
+      <NavItem
+        path="/ai-news"
+        label="AI News"
+        icon={<TipsAndUpdatesRounded />}
+      />
+      <NavItem
+        path="/mental-health"
+        label="Mental Health"
+        icon={<SelfImprovementRounded />}
+      />
+      <NavItem
+        path="/weekly-reset"
+        label="Weekly Reset"
+        icon={<TrendingUpRounded />}
       />
       <NavItem path="/messages" label="Messages" icon={<ChatRounded />} />
     </List>
