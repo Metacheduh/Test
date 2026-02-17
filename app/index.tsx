@@ -8,6 +8,7 @@ import { createRoot } from "react-dom/client";
 import { StoreProvider } from "./core/store";
 import { theme } from "./core/theme";
 import { Router } from "./routes/index";
+import "./index.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container!);

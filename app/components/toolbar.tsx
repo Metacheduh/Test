@@ -30,7 +30,7 @@ export function Toolbar(props: ToolbarProps): JSX.Element {
         color="neutral"
         variant="plain"
         endDecorator={<ExpandMoreRounded />}
-        children="Project Name"
+        children="Advisor OS 2026"
       />
 
       <Box sx={{ flexGrow: 1 }} component="span" />
